@@ -1,0 +1,12 @@
+name = "demo-restaurante"
+compatibility_date = "2026-11-01"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "demo-restaurante"
+database_id = "d79cdf3e-92f1-448a-99ec-f681396cad83"
+migrations_dir = "schema"
+
+[vars]
+DEMO_MODE = "1"

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /cocina
+Disallow: /pedido
+Disallow: /api/
+Sitemap: https://demo-restaurante-anx.pages.dev/sitemap.xml

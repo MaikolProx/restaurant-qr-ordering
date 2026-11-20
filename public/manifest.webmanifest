@@ -1,0 +1,9 @@
+{
+  "name": "Sabor Norteño (demo)",
+  "short_name": "Sabor Norteño",
+  "start_url": "/menu",
+  "display": "standalone",
+  "background_color": "#fbf6ef",
+  "theme_color": "#b23a1e",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

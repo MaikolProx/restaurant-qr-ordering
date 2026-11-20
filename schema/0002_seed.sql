@@ -1,0 +1,24 @@
+-- Datos de demostración ficticios. Generado por scripts/gen-seed.mjs
+INSERT INTO categories (id, name, position) VALUES (1, 'Entradas', 1);
+INSERT INTO categories (id, name, position) VALUES (2, 'Platos fuertes', 2);
+INSERT INTO categories (id, name, position) VALUES (3, 'Postres', 3);
+INSERT INTO categories (id, name, position) VALUES (4, 'Bebidas', 4);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (1, 1, 'Guacamole en molcajete', 'Aguacate, jitomate, cebolla, cilantro y totopos recién hechos.', 14500, 'guacamole', 1, 0);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (2, 1, 'Queso fundido con chorizo', 'Queso asadero gratinado con chorizo y tortillas de harina.', 15900, 'queso-fundido', 1, 1);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (3, 1, 'Sopa de tortilla', 'Caldo de jitomate, chile pasilla, aguacate, queso y crema.', 11900, 'sopa-tortilla', 1, 2);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (4, 2, 'Tacos de arrachera (3)', 'Arrachera a la parrilla, cebolla, cilantro y salsa verde.', 18900, 'tacos-arrachera', 1, 3);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (5, 2, 'Cabrito al pastor', 'Cabrito estilo Monterrey con frijoles charros y tortillas.', 34900, 'cabrito', 1, 4);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (6, 2, 'Enchiladas rojas', 'Rellenas de pollo, queso fresco, crema y lechuga.', 16500, 'enchiladas', 1, 5);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (7, 2, 'Burrito norteño', 'Carne asada, frijoles, arroz y salsa de la casa.', 17500, 'burrito', 1, 6);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (8, 3, 'Flan de la casa', 'Flan napolitano con caramelo.', 7900, 'flan', 1, 7);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (9, 3, 'Churros con chocolate', 'Churros recién hechos con azúcar y canela.', 8900, 'churros', 1, 8);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (10, 4, 'Horchata', 'Agua de horchata con canela, 500 ml.', 4500, 'horchata', 1, 9);
+INSERT INTO items (id, category_id, name, description, price_cents, image, available, position) VALUES (11, 4, 'Limonada mineral', 'Limón, menta y agua mineral, 500 ml.', 4900, 'limonada', 1, 10);
+INSERT INTO settings (key, value) VALUES ('restaurant_name', 'Sabor Norteño');
+INSERT INTO settings (key, value) VALUES ('is_open', '1');
+INSERT INTO settings (key, value) VALUES ('delivery_cents', '3500');
+INSERT INTO settings (key, value) VALUES ('whatsapp', '5218100000000');
+INSERT INTO settings (key, value) VALUES ('hours', 'Lunes a domingo, 13:00 a 23:00');
+INSERT INTO settings (key, value) VALUES ('address', 'Av. Ejemplo 123, Monterrey, N.L. (dirección ficticia)');
+INSERT INTO users (username, role, pass_hash, salt, iterations) VALUES ('admin', 'admin', 'b77d8dd3a21caaea6b93a22407b5e7d4568af002b8116637a03a100eff62c158', '53ffe4d95e1fe6dbeb5468cf8c27f078', 100000);
+INSERT INTO users (username, role, pass_hash, salt, iterations) VALUES ('cocina', 'cocina', '9e54302b8ed6df27d042ae6c4118200c9a888de036651740f92c51c5d7a5cd57', '4d45882241dd1bf50ae3bba7a0dc80cb', 100000);
